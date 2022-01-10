@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Bulb </title>
+    <style>
+        .all {
+            
+            margin-top: 12%;
+            margin-left: 38%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all">
+        <img id = "light" src="lightoff.jpg" alt="LIGHT OFF" width="250px" height="250px">
+        <p>
+            <button class="on" onclick="lightOn()">
+                Light On
+            </button>
+        </p>
+
+        <P>
+            <button class="off" onclick="lightOff()">
+                Light Off
+            </button>
+        </P>
+
+    </div>
+
+    <script>
+        lightOn = () => {
+            document.getElementById("light").src = "bulbon.jpg";
+        }
+
+        lightOff = () => {
+            document.getElementById("light").src="lightoff.jpg";
+        }
+    </script>
+</body>
+
+</html>
